@@ -1,0 +1,38 @@
+.Form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form h2{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Form form input,
+.Form form button{
+    width: 30em;
+    padding: 1em 2em;
+    outline: none;
+    border: #ccc 1px solid;
+    border-radius: 4px;
+    margin-top: 1em;
+    max-width: 90vw;
+    font-family: Poppins, sans-serif;
+}
+
+.Form form button{
+    background: var(--accent-red-orange);
+    color: #EEF1FF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Form form .error{
+    color: red;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 0.7em;
+}

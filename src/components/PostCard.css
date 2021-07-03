@@ -1,0 +1,95 @@
+.PostCard{
+    background: #EEF1FFD6;
+    box-shadow: 1px 4px 14px 0px #D0D0D080;
+    max-width: 50em;
+    border-radius: 20px;
+    /*margin-left: 4em;*/
+    padding: 1.5em 2em;
+    margin-bottom: 1em;
+}
+
+
+.PostCard .top{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 1em;
+}
+
+.PostCard .profile{
+    display: flex;
+    align-items: center;
+
+}
+
+.profPicture{
+    width: 4em;
+    height: 4em;
+    border-radius: 50px;
+    margin-right: 1em;
+    background: #ccc;
+    overflow: hidden;
+}
+
+.profPicture img{
+    width: 100%;
+    height: auto;
+}
+
+.PostCard .user h3,
+.PostCard .body h2,
+.PostCard .user p{
+    font-family: Poppins, sans-serif;
+}
+
+.PostCard .user h3{
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+.PostCard a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.PostCard .body{
+    margin: 1em 0;
+}
+
+.PostCard .body h2{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.PostCard .user p{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.PostCard .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PostCard .bottom svg{
+    cursor: pointer;
+}
+
+.PostCard .bottom_left{
+    display: flex;
+    align-items: center;
+}
+
+
+.PostCard .bottom_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PostCard .bottom_left .bottom_button{
+    padding-right: 1.5em;
+}

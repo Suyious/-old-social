@@ -1,0 +1,21 @@
+.bar{
+    height: 2em;
+    border-radius: 20px;
+    background: #cdd2e281;
+    margin-bottom: 1em;
+    animation: appear 800ms ease-in;
+}
+
+.long{
+    width: 50em;
+}
+
+.short{
+    width: 20em;
+}
+
+@keyframes appear{
+    from{
+        width: 10em;
+    }
+}

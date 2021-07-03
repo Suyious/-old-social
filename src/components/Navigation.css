@@ -1,0 +1,38 @@
+.Navigation{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.Nav{
+    width: 98vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light-blue-trans);
+    box-shadow: 0px 2px 13px 0px #D0D0D082;
+    border-radius: 0 0 20px 20px;
+    padding: 0 2em;
+}
+
+.Navigation ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.Nav .logo,
+.Nav ul li{
+    padding: 1em;
+    cursor: pointer;
+}
+
+.Nav .logo{
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-size: 0.8em;
+    line-height: 45px;
+    color: var(--accent-red-orange);
+}
