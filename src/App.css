@@ -19,7 +19,8 @@ linear-gradient(0deg, #EEF1FF, #EEF1FF);
   background-repeat: repeat;
   padding-top: 5em;
   padding-bottom: 1em;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .ClickToExit{

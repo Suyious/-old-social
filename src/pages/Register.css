@@ -19,7 +19,7 @@
     border: #ccc 1px solid;
     border-radius: 4px;
     margin-top: 1em;
-    max-width: 90vw;
+    max-width: 80vw;
     font-family: Poppins, sans-serif;
 }
 
@@ -30,9 +30,23 @@
     cursor: pointer;
 }
 
-.Form form .error{
+.error{
+    text-align: center;
     color: red;
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 0.7em;
+}
+
+.Form .toggleauth{
+    margin-top: 1em;
+    font-size: 0.87em;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Form .toggleauth a{
+    text-decoration: none;
+    color: var(--accent-red-orange);
 }

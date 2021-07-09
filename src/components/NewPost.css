@@ -52,6 +52,10 @@
     width: 20rem;
 }
 
+.NewPost .input{
+    padding-bottom: 3em;
+}
+
 .NewPost .body{
     position: relative;
 }

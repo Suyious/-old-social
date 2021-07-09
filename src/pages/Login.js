@@ -1,8 +1,12 @@
 import { gql, useMutation } from "@apollo/client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Redirect } from "react-router";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../context/auth";
 import { useForm } from "../util/hooks";
 
 function Login(props) {
+  const context = useContext(AuthContext);
   const [errors, setErrors] = useState({});
   const { onSubmit, onChange, values } = useForm(loginUserCallback,{
     username:"",
@@ -11,7 +15,8 @@ function Login(props) {
 
   const [loginUser, { loading }] = useMutation(LOGIN_USER, {
     update(_, result) {
-      // console.log(result);
+      console.log(result.data.login);
+      context.login(result.data.login);
       props.history.push("/");
     },
     onError(err) {
@@ -26,6 +31,8 @@ function Login(props) {
   }
 
   return (
+    context.user? 
+    <Redirect to="/"/>:
     <div className="Login Form wrapper">
       <h2>Login</h2>
       <form action="" onSubmit={onSubmit}>
@@ -48,6 +55,7 @@ function Login(props) {
         <button type="submit">Login{loading && "g in..."}</button>
         {errors.general && <p className="error">{errors.general}</p>}
       </form>
+      <p className="toggleauth">Don't have an Account? <Link to="/register">Register</Link></p>
     </div>
   );
 }

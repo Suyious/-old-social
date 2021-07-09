@@ -2,16 +2,23 @@
     height: 2em;
     border-radius: 20px;
     background: #cdd2e281;
-    margin-bottom: 1em;
-    animation: appear 800ms ease-in;
+    animation: appear 1500ms ease-in;
 }
+
 
 .long{
     width: 50em;
+    margin-bottom: 0.8em;
 }
 
 .short{
     width: 20em;
+    margin-bottom: 0.5em;
+}
+
+.shortH{
+    width: 5em;
+    height: 0.8em;
 }
 
 @keyframes appear{

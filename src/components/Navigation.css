@@ -24,7 +24,7 @@
 }
 
 .Nav .logo,
-.Nav ul li{
+.Nav .nav_right .nav_list{
     padding: 1em;
     cursor: pointer;
 }

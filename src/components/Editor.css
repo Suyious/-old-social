@@ -8,7 +8,7 @@
     min-height: 10em;
     max-height: 50vh;
     overflow-y: scroll;
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 0.9em;

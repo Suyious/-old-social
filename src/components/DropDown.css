@@ -1,0 +1,22 @@
+.DropDown ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    right: 2em;
+    top: 4.5em;
+    flex-direction: column;
+    padding: 1em 0;
+    background: var(--light-blue-trans);
+    border-radius: 4px;
+}
+
+.DropDown ul li{
+    padding: 0.5em 2em;
+    display: flex;
+}
+
+.DropDown ul li:hover{
+    background: #ccccccc0;
+}

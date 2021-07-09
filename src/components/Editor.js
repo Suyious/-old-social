@@ -11,6 +11,13 @@ function Editor({ setInput, placeHolder, input }) {
     }
   },[])
 
+  useEffect(()=>{
+    if(input===""){
+      inputBox.current.textContent = "";
+      inputBox.current.classList.add("input_blank")
+    } 
+  },[input])
+
   //The editable div placeholder controller
   const handleEditor = (e) => {
     setInput(e.target.textContent);
