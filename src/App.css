@@ -1,20 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-:root{
-  --light-blue-trans: #EEF1FFD6;
-  --accent-red-orange: #FF5151;
-}
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root{
+  --primary: #F9EFF4;
+  --secondary-trans: #EEF1FFD6;
+  --secondary-trans-var: #f1f4fff3;
+  --primary-text: #000;
+  --tertiary-text: #4f4f4f;
+  --accent-red-orange: #FF5151;
+  --editor-body: #F5F7FF;
+  --highlight: #ccccccc0;
+}
+
+/* :root{
+  --primary: #EEF1FF;
+  --primary: #F9EFF4;
+  --primary: #250D07;
+  --secondary-trans: #EEF1FFD6;
+  --secondary-trans: #261818E5;
+  --secondary-trans-var: #F1F4FFBD;
+  --secondary-trans-var: #261818;
+  --primary-text: #000;
+  --primary-text: #fff;
+  --tertiary-text: #4f4f4f;
+  --tertiary-text: #DBDCE8;
+  --accent-red-orange: #FF5151;
+  --editor-body: #F5F7FF;
+  --editor-body: #302727;
+  --highlight: #ccccccc0;
+  --highlight: #cccccc1f;
+} */
+
+
 .App{
   background: url(./images/Patterns.png),linear-gradient(180deg, #FFE9E9 0%, rgba(253, 242, 242, 0.54) 100%),
-linear-gradient(0deg, #EEF1FF, #EEF1FF);
+linear-gradient(0deg, var(--primary), var(--primary));
+  background: var(--primary);
   background-position: center;
   background-repeat: repeat;
   padding-top: 5em;
@@ -29,4 +56,8 @@ linear-gradient(0deg, #EEF1FF, #EEF1FF);
   left: 0;
   width: 100vw;
   height: 100vh;
+}
+
+h1,h2,h3,p{
+  color: var(--primary-text);
 }

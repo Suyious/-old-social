@@ -1,5 +1,6 @@
 .Editor .input{
-    background: #F5F7FF;
+    background: var(--editor-body);
+    color: var(--primary-text);
     border-radius: 6px;
     outline: none;
     user-select: text;
@@ -24,7 +25,7 @@
 .input_blank::before {
     content: attr(aria-placeholder);
     position: absolute;
-    color: #4F4F4F;
+    color: var(--tertiary-text);
     display: block; /* For Firefox */
   }
 

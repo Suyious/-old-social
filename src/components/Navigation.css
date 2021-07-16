@@ -11,8 +11,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--light-blue-trans);
-    box-shadow: 0px 2px 13px 0px #D0D0D082;
+    background: var(--secondary-trans);
+    /* box-shadow: 0px 2px 13px 0px #D0D0D082; */
+    border: 1px solid #3333331f;
     border-radius: 0 0 20px 20px;
     padding: 0 2em;
 }
@@ -29,10 +30,23 @@
     cursor: pointer;
 }
 
+.Nav .nav_right .post svg path,
+.Nav .nav_right .setting svg path{
+    fill: var(--tertiary-text);
+}
+
+.Nav .nav_right .notif svg path{
+    stroke: var(--tertiary-text);
+}
+
+
 .Nav .logo{
     font-family: Jost, sans-serif;
     font-weight: 900;
     font-size: 0.8em;
     line-height: 45px;
+}
+
+.Nav .logo h1{
     color: var(--accent-red-orange);
 }

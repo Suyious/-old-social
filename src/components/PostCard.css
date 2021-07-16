@@ -1,6 +1,7 @@
 .PostCard{
-    background: #EEF1FFD6;
-    box-shadow: 1px 4px 14px 0px #D0D0D080;
+    background: var(--secondary-trans);
+    border: solid 1px #8888881f;
+    /* box-shadow: 1px 4px 14px 0px #D0D0D080; */
     max-width: 50em;
     border-radius: 20px;
     /*margin-left: 4em;*/
@@ -71,6 +72,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.PostCard .bottom svg path{
+    fill: var(--tertiary-text);
 }
 
 .PostCard .bottom svg{

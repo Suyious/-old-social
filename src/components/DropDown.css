@@ -8,15 +8,27 @@
     top: 4.5em;
     flex-direction: column;
     padding: 1em 0;
-    background: var(--light-blue-trans);
-    border-radius: 4px;
+    background: var(--secondary-trans);
+    border: 1px solid #3333330f;
+    border-radius: 10px 0 10px 10px;
 }
 
 .DropDown ul li{
+    font-family: Poppins, sans-serif;
     padding: 0.5em 2em;
     display: flex;
+    cursor: pointer;
+    color: var(--primary-text);
 }
 
 .DropDown ul li:hover{
-    background: #ccccccc0;
+    background: var(--highlight);
+}
+
+.DropDown ul li svg{
+    margin-right: 1em;
+}
+
+.DropDown ul li svg path{
+    fill: var(--primary-text);
 }
