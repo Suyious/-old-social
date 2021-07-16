@@ -12,14 +12,14 @@ function Navigation() {
 
     const [darkMode, setDarkMode] = useState(false);
     useEffect(()=>{
-        if(localStorage.getItem("darkMode")===true){
+        if(localStorage.getItem("darkMode")==="true"){
             setDarkMode(true);
         }
-    })
+    },[])
 
     const darkModeToggle = () => {
-        localStorage.setItem("darkMode",!darkMode);
         setDarkMode(!darkMode);
+        localStorage.setItem("darkMode",!darkMode);
         const root = document.querySelector(":root");
         if(!darkMode){
             root.style.setProperty("--primary","#250D07");

@@ -8,9 +8,10 @@ import { AuthProvider } from "./context/auth";
 import { useEffect } from "react";
 
 function App() {
+
   useEffect(() => {
     const darkMode = localStorage.getItem("darkMode");
-    if(darkMode===true) {
+    if(darkMode==="true") {
       const root = document.querySelector(":root");
       root.style.setProperty("--primary", "#250D07");
       root.style.setProperty("--secondary-trans", "#261818E5");

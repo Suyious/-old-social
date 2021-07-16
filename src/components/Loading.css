@@ -1,13 +1,13 @@
 .bar{
     height: 2em;
-    border-radius: 20px;
+    border-radius: 5px;
     background: #cdd2e281;
     animation: appear 1500ms ease-in;
 }
 
 
 .long{
-    width: 50em;
+    width: 90%;
     margin-bottom: 0.8em;
 }
 
