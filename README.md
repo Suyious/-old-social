@@ -18,6 +18,6 @@ The following will be implemented soon enough:
 
 |Light-Mode Design| Dark-Mode Design|
 |--|--|
-|![Light-Mode](./src/images/Light 2.jpg)|![Dark-Mode](./src/images/Dark 1.jpg)|
+|![Light-Mode](./src/images/Light_2.jpg)|![Dark-Mode](./src/images/Dark_1.jpg)|
 
 > The app is not public as of right now due to security purpose [ and because me being broke I can't really pay for a real hosting ]
