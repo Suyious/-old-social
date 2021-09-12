@@ -13,3 +13,6 @@ In social, I have implemented the following functionalities for now:
 ------
 The following will be implemented soon enough:
 #### 👗 Editing user profiles
+
+
+> The app is not public as of right now due to security purpose [ and because me being broke I can't really pay for a real hosting ]
