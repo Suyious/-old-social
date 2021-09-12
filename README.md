@@ -8,8 +8,8 @@ In social, I have implemented the following functionalities for now:
 #### 🙍🏻 Handling user (authentication)
 #### 👨🏻‍💻 Login/Logout functionality
 #### 🏴 Toggling Dark Mode (A Priority i must say)
-------
-The following will be implemented soon enough:
 #### 👍 Liking posts
 #### 💬 Commenting on posts
+------
+The following will be implemented soon enough:
 #### 👗 Editing user profiles
