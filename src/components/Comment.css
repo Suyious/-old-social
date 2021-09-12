@@ -1,0 +1,30 @@
+.comment_card{
+	border-bottom: 1px solid var(--secondary);
+	padding: 1em;
+}
+
+.comment_head{
+	display: flex;
+	justify-content: space-between;
+}
+
+.comment_head .comment_head_left{
+	display: flex;
+	align-items: baseline;
+}
+
+.comment_head h3{
+	font-weight: 500;
+	font-size: 0.8em;
+	margin-right: 0.5em;
+}
+
+.comment_head .comment_time{
+	font-size: 0.8em;	
+}
+
+.comment_body{
+	margin-top: -0.3em;
+}
+
+

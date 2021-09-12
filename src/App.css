@@ -9,6 +9,7 @@
 
 :root{
   --primary: #F9EFF4;
+  --secondary: #e8e8e8;
   --secondary-trans: #EEF1FFD6;
   --secondary-trans-var: #f1f4fff3;
   --primary-text: #000;
@@ -60,4 +61,12 @@ linear-gradient(0deg, var(--primary), var(--primary));
 
 h1,h2,h3,p{
   color: var(--primary-text);
+}
+
+.BackPattern{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }

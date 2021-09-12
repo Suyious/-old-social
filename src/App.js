@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import Navigation from "./components/Navigation";
 import { AuthProvider } from "./context/auth";
 import { useEffect } from "react";
+import Post from "./pages/Post";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     if(darkMode==="true") {
       const root = document.querySelector(":root");
       root.style.setProperty("--primary", "#250D07");
+      root.style.setProperty("--secondary","#313131");
       root.style.setProperty("--secondary-trans", "#261818E5");
       root.style.setProperty("--secondary-trans-var", "#261818");
       root.style.setProperty("--tertiary-text", "#DBDCE8");
@@ -31,6 +33,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
+          <Route exact path="/posts/:postId" component={Post} />
         </Router>
       </AuthProvider>
     </div>

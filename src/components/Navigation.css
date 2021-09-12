@@ -47,6 +47,10 @@
     line-height: 45px;
 }
 
+.Nav .logo a {
+	text-decoration: none;
+}
+
 .Nav .logo h1{
     color: var(--accent-red-orange);
 }

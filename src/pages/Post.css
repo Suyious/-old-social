@@ -1,0 +1,44 @@
+.PostCard.centred{
+    margin: 1em auto;
+}
+
+p.centred{
+    text-align: center;
+}
+
+.comments .comments_input{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1em;
+	white-space: pre;
+}
+
+.PostCard.centred.comments .Editor{
+	flex: 1;
+}
+
+.PostCard.centred.comments .input{
+	min-height: 100%;
+	padding: 1em;
+	padding-left: 2em;
+}
+
+.PostCard.centred.comments .comment_button{
+	margin-left: 1em;
+	padding: 1em 3em;
+	font-family: "Poppins", serif;
+	background: var(--accent-red-orange);
+	color: var(--tertiary-text);
+	outline: none;
+	border: none;
+	font-size: 0.8em;
+	font-weight: 600;
+	border-radius: 4px;
+	height: 100%;
+}
+
+.PostCard.centred.comments button:disabled{
+	background: red;
+}
+
+

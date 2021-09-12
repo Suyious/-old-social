@@ -1,0 +1,35 @@
+.confirmation{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.confirmDialog{
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    border: 1px solid var(--highlight);
+    border-radius: 5px;
+    background: var(--secondary-trans);
+    margin: 50vh 0 0 50vw;
+    transform: translate(-50%,-50%);
+}
+
+.confirmDialog h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+
+.confirmDialog button{
+    outline: none;
+    border: none;
+    padding: 0.5em 1em;
+    width: 5em;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    background: var(--accent-red-orange);
+    color: var(--primary-text);
+}

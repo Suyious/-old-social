@@ -17,6 +17,20 @@
     margin-bottom: 1em;
 }
 
+.PostCard .MoreDrop{
+    position: relative;
+}
+
+.PostCard .MoreDrop ul{
+    background: var(--secondary);
+    top: 0;
+    right: 0;
+}
+
+.PostCard .MoreDrop .report svg{
+    fill: var(--primary-text);
+}
+
 .PostCard .profile{
     display: flex;
     align-items: center;

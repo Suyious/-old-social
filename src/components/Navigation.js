@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import {Link} from 'react-router-dom';
 import { AuthContext } from '../context/auth';
 import DropDown from './DropDown';
 import  "./Navigation.css"
@@ -23,6 +24,7 @@ function Navigation() {
         const root = document.querySelector(":root");
         if(!darkMode){
             root.style.setProperty("--primary","#250D07");
+            root.style.setProperty("--secondary","#313131");
             root.style.setProperty("--secondary-trans","#261818E5");
             root.style.setProperty("--secondary-trans-var","#261818");
             root.style.setProperty("--tertiary-text","#DBDCE8");
@@ -31,6 +33,7 @@ function Navigation() {
             root.style.setProperty("--highlight","#cccccc1f");
         } else {
             root.style.setProperty("--primary","#F9EFF4");
+            root.style.setProperty("--secondary","#e8e8e8");
             root.style.setProperty("--secondary-trans","#EEF1FFD6");
             root.style.setProperty("--secondary-trans-var","#f1f4fff3");
             root.style.setProperty("--primary-text","#000");
@@ -49,7 +52,9 @@ function Navigation() {
         <div className="Navigation">
             <div className="Nav  wrapper">
                 <div className="nav_left logo">
+                  <Link to="/">
                     <h1>social.</h1>
+                  </Link>
                 </div>
                 {user && <ul className="nav_right">
                     <li className="nav_list post" onClick={()=>setOpenBar(!openBar)}>
@@ -73,6 +78,7 @@ function Navigation() {
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8ZM4 18C4 15.34 9.33 14 12 14C14.67 14 20 15.34 20 18V19C20 19.55 19.55 20 19 20H5C4.45 20 4 19.55 4 19V18Z" fill="#000000"/></svg>
                                 user
                             </li>
+
                             {darkMode?
                             <li className="dark" onClick={darkModeToggle}>
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg>
@@ -84,6 +90,7 @@ function Navigation() {
                                 dark mode
                             </li>
                             }
+                            
                             <li className="logout" onClick={handleLogout}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V16C3 15.45 3.45 15 4 15C4.55 15 5 15.45 5 16V18C5 18.55 5.45 19 6 19H18C18.55 19 19 18.55 19 18V6C19 5.45 18.55 5 18 5H6C5.45 5 5 5.45 5 6V8C5 8.55 4.55 9 4 9C3.45 9 3 8.55 3 8V5C3 3.9 3.89 3 5 3ZM15.79 12.7L12.2 16.29C11.81 16.68 11.18 16.68 10.79 16.29C10.41 15.91 10.4 15.27 10.79 14.88L12.67 13H4C3.45 13 3 12.55 3 12C3 11.45 3.45 11 4 11H12.67L10.79 9.11C10.4 8.72 10.4 8.09 10.79 7.7C10.9768 7.51275 11.2305 7.40751 11.495 7.40751C11.7595 7.40751 12.0132 7.51275 12.2 7.7L15.79 11.29C16.18 11.68 16.18 12.31 15.79 12.7Z" fill="#000000"/></svg>
                                 Log out
